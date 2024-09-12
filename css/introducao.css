@@ -1,0 +1,114 @@
+.introducao{
+  max-width: 1200px;
+  display: grid;
+  padding: 40px 20px;
+  margin: 0 auto;
+  gap: 100px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute; 
+  top: -15px;
+  left: -45px;  
+  z-index: -1;    
+}
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+@media (max-width:894px) {
+  .introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .introducao h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .introducao h1::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 108px;
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: -20px;
+    left: -9px;
+    z-index: -1; 
+  }
+  .introducao img {    
+    max-width: 198px;
+    height: 286px;    
+    justify-self: end;
+  }
+  .introducao p {
+    font-size: 1.2rem;
+    color: #525252;    
+  }  
+}
+@media (max-width:642px) {
+  .introducao h1 {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .introducao h1::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 21px;
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: 5px;
+    left: -6px;
+    z-index: -1; 
+  }
+  .introducao img {    
+    max-width: 150px;
+    height: 236px;   
+    justify-self: center;
+  }
+}
+@media (max-width:475px) {
+  .introducao{
+    max-width: 1200px;
+    display: grid;
+    padding: 20px 20px;
+    margin: 0 auto;        
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .introducao h1 {
+    font-size: 2.3rem;    
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .introducao img {    
+    display: none;
+  }
+  .introducao h1::before {
+    display: none;
+  }
+  .introducao p {
+    display: none;
+  }
+}
